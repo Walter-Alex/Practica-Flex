@@ -24,11 +24,39 @@ nav a{
     font-weight: 600; /* Grosor del texto */
     padding: 15px; /* Espacio adentro del enlace */
     border-radius: 12px; /* Bordes redondeados */
-    transition: 0.6s; /* Tiempo para volver al estado normal*/
+    transition: 0.6s; /* Tiempo para volver al estado normal */
 }
 
 nav a:hover{
     background-color: rgb(34, 34, 34); /* Color de fondo al pasar el mouse */
     scale: 1.1; /* Aumentar el tamaño del enlace al pasar el mouse */
     transition: 0.6s; /* Tiempo de duración de la animación */
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around; /* Alineación horizontal */
+    gap: 30px; /* Separación entre los elementos */
+    margin-top: 25px; /* Para separar las tarjetas del menú*/
+
+    flex-wrap: wrap; /* Para usar varias lineas */
+}
+
+.card{
+    display: flex; /* Activar flexbox*/
+    flex-direction: column;
+    align-items: center; /* Alineación horizontal */
+    gap: 20px; /* Separación del texto y la imagen */
+}
+
+.card img{
+    width: 300px; /* Ancho */
+    height: 300px; /* Alto */
+    object-fit: cover; /* Para que la imagen no se aplaste */
+    border-radius: 20px; /* Bordes redondeados */
+}
+
+.card h3{
+    font-size: 23px;
+    font-weight: 400;
 }
